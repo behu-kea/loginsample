@@ -26,7 +26,7 @@ public class DBManager {
             ex.printStackTrace();
         }
         try {
-            connection = DriverManager.getConnection(url, user, password);
+            connection = DriverManager.getConnection("localhost:3306", "root", "1234password");
         } catch (SQLException e) {
             e.printStackTrace();
         }
